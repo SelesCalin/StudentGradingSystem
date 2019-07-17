@@ -103,7 +103,7 @@ CREATE TABLE student_course(
   
 );
 
-CREATE student_grade(
+CREATE TABLE student_grade(
   `student_id` INT NOT NULL,
   `assignment_id` INT NOT NULL,
   `grade` DOUBLE,
