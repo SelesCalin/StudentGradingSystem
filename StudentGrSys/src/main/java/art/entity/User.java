@@ -1,15 +1,18 @@
 package art.entity;
 
+
+
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-
+@Table(name="user")
 public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="iduser")
+    @Column(name="id_user")
     private Integer iduser;
 
     @Column(name="username")
@@ -23,19 +26,28 @@ public class User implements Serializable {
     private String role;
 
 
-    @Column(name="name")
+    @Column(name="nume")
     private String nume;
 
     @Column(name="grupa")
     private Integer grupa;
 
 
-    public User(String username, String password, String role, String nume, Integer grupa) {
+    @Column(name="email")
+    private String email;
+
+    @Column(name="adresa")
+    private String adresa;
+
+
+    public User(String username, String password, String role, String nume, Integer grupa,String email, String adresa) {
         this.username = username;
         this.password = password;
         this.role = role;
         this.nume = nume;
         this.grupa = grupa;
+        this.email=email ;
+        this.adresa=adresa;
     }
 
     public User() {
@@ -89,6 +101,20 @@ public class User implements Serializable {
         this.grupa = grupa;
     }
 
+    public String getEmail() {
+        return email;
+    }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getAdresa() {
+        return adresa;
+    }
+
+    public void setAdresa(String adresa) {
+        this.adresa = adresa;
+    }
 }
 
