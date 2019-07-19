@@ -3,13 +3,15 @@ package art.entity;
 import art.entity.enumeration.Difficulty;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="quiz")
 public class Quiz {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name="id_quiz")
     private Integer idQuiz;
 
@@ -34,17 +36,21 @@ public class Quiz {
     @Column(name="time")
     private Integer time;
 
+    @OneToMany(mappedBy = "quiz",cascade = CascadeType.ALL,orphanRemoval = true)
+    private Set<Question> questions=new HashSet<Question>();
+
 
     public Quiz() {
     }
 
-    public Quiz(String name, String description, Course course, Integer questionNumber, Difficulty difficulty, Integer time) {
+    public Quiz(String name, String description, Course course, Integer questionNumber, Difficulty difficulty, Integer time,Set<Question> questions) {
         this.name = name;
         this.description = description;
         this.course = course;
         this.questionNumber = questionNumber;
         this.difficulty = difficulty;
         this.time = time;
+        this.questions= questions;
     }
 
     public Integer getIdQuiz() {
@@ -101,5 +107,26 @@ public class Quiz {
 
     public void setTime(Integer time) {
         this.time = time;
+    }
+
+    public Set<Question> getQuestions() {
+        return questions;
+    }
+
+    public void setQuestions(Set<Question> questions) {
+        this.questions = questions;
+    }
+
+
+    public void addQuestion(Question question){
+        questions.add(question);
+        question.setQuiz(this);
+    }
+
+
+    public void removeQuestion(Question question)
+    {
+        questions.remove(question);
+        question.setQuiz(null);
     }
 }

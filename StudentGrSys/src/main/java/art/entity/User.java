@@ -5,13 +5,16 @@ package art.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name="user")
 public class User implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name="id_user")
     private Integer iduser;
 
@@ -39,8 +42,21 @@ public class User implements Serializable {
     @Column(name="adresa")
     private String adresa;
 
+    @OneToMany(mappedBy = "sender",cascade = CascadeType.ALL,orphanRemoval = true)
+    private Set<Chat> senders=new HashSet<Chat>();
 
-    public User(String username, String password, String role, String nume, Integer grupa,String email, String adresa) {
+    @OneToMany(mappedBy = "reciver",cascade = CascadeType.ALL,orphanRemoval = true)
+    private Set<Chat> recivers=new HashSet<Chat>();
+
+    @ManyToMany(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
+    @JoinTable(name = "student_course",
+            joinColumns = @JoinColumn(name = "id_student"),
+            inverseJoinColumns = @JoinColumn(name = "id_course")
+    )
+    private Set<Course> courses = new HashSet<Course>();
+
+
+    public User(String username, String password, String role, String nume, Integer grupa,String email, String adresa,Set<Chat> senders,Set<Chat> recivers) {
         this.username = username;
         this.password = password;
         this.role = role;
@@ -48,6 +64,8 @@ public class User implements Serializable {
         this.grupa = grupa;
         this.email=email ;
         this.adresa=adresa;
+        this.senders=senders;
+        this.recivers=recivers;
     }
 
     public User() {
@@ -115,6 +133,74 @@ public class User implements Serializable {
 
     public void setAdresa(String adresa) {
         this.adresa = adresa;
+    }
+
+    public Set<Chat> getSenders() {
+        return senders;
+    }
+
+    public void setSenders(Set<Chat> senders) {
+        this.senders = senders;
+    }
+
+    public Set<Chat> getRecivers() {
+        return recivers;
+    }
+
+    public void setRecivers(Set<Chat> recivers) {
+        this.recivers = recivers;
+    }
+
+    public Set<Course> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(Set<Course> courses) {
+        this.courses = courses;
+    }
+
+    public void addSender(Chat chat){
+        senders.add(chat);
+        chat.setSender(this);
+    }
+
+
+    public void removeSenders(Chat chat)
+    {
+       senders.remove(chat);
+        chat.setSender(null);
+    }
+
+    public void addReciver(Chat chat){
+        recivers.add(chat);
+        chat.setReciver(this);
+    }
+
+    public void removeReciver(Chat chat){
+        recivers.remove(chat);
+        chat.setReciver(null);
+    }
+
+    public void addCourse(Course course) {
+        courses.add(course);
+        course.getStudents().add(this);
+    }
+
+    public void removeCourse(Course course) {
+        courses.remove(course);
+        course.getStudents().remove(this);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User)) return false;
+        return iduser != null && iduser.equals(((User) o).getIduser());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(iduser);
     }
 }
 

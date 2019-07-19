@@ -4,17 +4,18 @@ package art.entity;
 import art.entity.enumeration.ResponseType;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 @Table(name= "answer")
 public class Answer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name="id_answer")
     private Integer idAnswer;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="id_question")
     private Question question;
 
@@ -64,5 +65,16 @@ public class Answer {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Answer )) return false;
+        return idAnswer != null && idAnswer.equals(((Answer) o).getIdAnswer());
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(idAnswer);
     }
 }

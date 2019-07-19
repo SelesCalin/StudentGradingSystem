@@ -34,6 +34,7 @@ public class App
         System.out.println(user.getNume());
         System.out.println(course.getEnrollmentKey());
         System.out.println(quiz.getDifficulty());
+        System.out.println(quiz.getCourse().getEnrollmentKey());
         session.close();
 
 //        User user= new User();

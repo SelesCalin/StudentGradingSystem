@@ -5,21 +5,22 @@ import art.entity.enumeration.MessageStatus;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.Objects;
 
 @Entity
 @Table(name="chat")
 public class Chat {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name="id_chat")
     private Integer idChat;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="sender_user")
     private User sender;
 
-    @ManyToOne(fetch=FetchType.EAGER)
+    @ManyToOne(fetch=FetchType.LAZY)
     @JoinColumn(name="reciver_user")
     private User reciver;
 
@@ -91,5 +92,17 @@ public class Chat {
 
     public void setStatus(MessageStatus status) {
         this.status = status;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Chat )) return false;
+        return idChat != null && idChat.equals(((Chat) o).getIdChat());
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(idChat);
     }
 }

@@ -1,18 +1,22 @@
 package art.entity;
 
 
+import org.omg.CORBA.AnySeqHelper;
+
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="quiz_question")
 public class Question {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name="iq_quiz_question")
     private Integer idQuestion;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="id_quiz")
     private Quiz quiz;
 
@@ -22,11 +26,15 @@ public class Question {
     @Column(name="question_text")
     private String text;
 
+    @OneToMany(mappedBy = "question",cascade = CascadeType.ALL,orphanRemoval = true)
+    private Set<Answer> answers=new HashSet<Answer>();
 
-    public Question(Quiz quiz, Integer answerNumber, String text) {
+
+    public Question(Quiz quiz, Integer answerNumber, String text, Set<Answer> answers) {
         this.quiz = quiz;
         this.answerNumber = answerNumber;
         this.text = text;
+        this.answers=answers;
     }
 
     public Question() {
@@ -63,4 +71,26 @@ public class Question {
     public void setText(String text) {
         this.text = text;
     }
+
+    public Set<Answer> getAnswers() {
+        return answers;
+    }
+
+    public void setAnswers(Set<Answer> answers) {
+        this.answers = answers;
+    }
+
+    public void addAnswer(Answer answer){
+        answers.add(answer);
+        answer.setQuestion(this);
+    }
+
+
+    public void removeAnswer(Answer answer)
+    {
+        answers.remove(answer);
+        answer.setQuestion(null);
+    }
+
+
 }
