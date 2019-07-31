@@ -7,128 +7,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42a67e1-7461-4a51-a05d-7ef124536010" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringTry.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/config/PersistanceJPAConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/config/ServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/config/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/chat/Chat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/course/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/course/assignment/Assignment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/course/assignment/AssignmentGrade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/course/assignment/AssignmentGradeID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/course/material/Material.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/course/quiz/Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/course/quiz/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/course/quiz/Quiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/course/quiz/QuizGrade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/course/quiz/QuizGradeID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/enumeration/Difficulty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/enumeration/MessageStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/enumeration/ResponseType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/enumeration/RoleType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/form/LoginForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/ex/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringTry-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringTry-1.0-SNAPSHOT/WEB-INF/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringTry-1.0-SNAPSHOT/WEB-INF/classes/com/spring/ex/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringTry-1.0-SNAPSHOT/WEB-INF/classes/com/spring/ex/controller/HelloController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringTry-1.0-SNAPSHOT/WEB-INF/classes/com/spring/ex/controller/LoginController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringTry-1.0-SNAPSHOT/WEB-INF/classes/com/spring/ex/entity/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringTry-1.0-SNAPSHOT/WEB-INF/classes/com/spring/ex/form/LoginForm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringTry-1.0-SNAPSHOT/WEB-INF/classes/com/spring/ex/repository/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringTry-1.0-SNAPSHOT/WEB-INF/classes/com/spring/ex/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringTry-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.10.0.pr1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringTry-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.10.0.pr1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringTry-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.10.0.pr1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/SpringTry-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/spring/ex/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/spring/ex/controller/HelloController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/spring/ex/controller/LoginController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/spring/ex/entity/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/spring/ex/form/LoginForm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/spring/ex/repository/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/spring/ex/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/spring/ex/AppTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/.idea/artifacts/unnamed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/dao/AssignmentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/dao/AssignmentGradeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/dao/ChatDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/dao/CourseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/dao/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/course/assignment/AssignmentGrade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/course/quiz/QuizGrade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/course/quiz/QuizGradeID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/enumeration/RoleType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/form/LoginForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/test/java/art/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/test/java/art/EntityTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/test/java/art/dao/AssignmentGradeDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/test/java/art/dao/ChatDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/test/java/art/dao/CourseDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StudentGrSys/src/test/java/art/dao/UserDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tacos/src/main/java/com/ex/tacos/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tacos/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tacos/src/test/java/com/ex/tacos/controller/HomeControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/.idea/dataSources/5383f461-d4bc-4f1a-8879-c62bbc4cb928.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/.idea/dataSources/5383f461-d4bc-4f1a-8879-c62bbc4cb928.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/documentation/db_diagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/documentation/db_diagram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/documentation/gradingSystemDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/documentation/gradingSystemDB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/course/quiz/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/Assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/course/assignment/Assignment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/AssignmentGrade.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/AssignmentGradeID.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/course/assignment/AssignmentGradeID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/chat/Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/course/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/course/material/Material.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/course/quiz/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/course/quiz/Quiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/enumeration/Difficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/enumeration/Difficulty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/enumeration/MessageStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/enumeration/MessageStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/enumeration/ResponseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/entity/enumeration/ResponseType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/util/HibernateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentGrSys/src/main/java/art/util/HibernateUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/src/test/java/art/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/target/classes/META-INF/StudentGrSys.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/target/classes/art/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/target/classes/art/entity/Answer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/target/classes/art/entity/Assignment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/target/classes/art/entity/Chat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/target/classes/art/entity/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/target/classes/art/entity/Material.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/target/classes/art/entity/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/target/classes/art/entity/Quiz.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/target/classes/art/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/target/classes/art/entity/enumeration/Difficulty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/target/classes/art/entity/enumeration/MessageStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/target/classes/art/entity/enumeration/ResponseType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/target/classes/art/util/HibernateUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentGrSys/target/test-classes/art/AppTest.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/.idea/entity.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/controller/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/dto/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/chat/Chat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/assignment/Assignment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/assignment/AssignmentGrade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/assignment/AssignmentGradeID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/material/Material.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/quiz/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/quiz/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/quiz/Quiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/quiz/QuizGrade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/quiz/QuizGradeID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/enumeration/Difficulty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/enumeration/MessageStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/enumeration/ResponseType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/enumeration/RoleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -279,6 +180,7 @@
       <workItem from="1564404362329" duration="5423000" />
       <workItem from="1564467037289" duration="10764000" />
       <workItem from="1564483371637" duration="2953000" />
+      <workItem from="1564554015324" duration="2237000" />
     </task>
     <servers />
   </component>
