@@ -1,0 +1,18 @@
+<mat-toolbar color="accent" class="app-header">
+  <mat-toolbar-row>
+    <div>
+      <h3 class="header">Student Grading System </h3>
+    </div>
+
+    <span>
+      <div *ngIf="isAuthenticated()===false">
+        <a mat-button mat-raised-button routerLink="login" routerLinkActive="active">Log in</a>
+        <a mat-button mat-raised-button routerLink="register" routerLinkActive="active">Register</a>
+      </div>
+      </span>
+    <span class="fillSpace"></span>
+    <span><a *ngIf="isAuthenticated()" mat-button mat-raised-button  (click)="logout()">Log Out</a>
+    </span>
+    
+  </mat-toolbar-row>
+</mat-toolbar>
