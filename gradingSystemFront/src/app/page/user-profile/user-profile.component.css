@@ -1,0 +1,49 @@
+.profile-card{ 
+    flex:1;
+    background-color:darkslategray;
+}
+
+.flex-container{ 
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    justify-content: flex-start;
+}
+
+.second-page{ 
+    background-color: rgb(7, 109, 109);
+    width:auto;
+    margin-right: 0;
+    flex:2;
+
+}
+
+.chip-student,.chip-teacher{
+    height: 100px;
+    width: 100% ;
+    font-size: 36pt;
+    font-family: serif;
+}
+
+
+.users-table{ 
+  
+    width:100%;
+    height: 400px;
+    overflow: auto;
+    display: inline-grid;
+    margin-bottom: 20px;
+}
+
+.table-course{
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    display: grid;
+    margin-bottom:20px;
+}
+
+.mat-tooltip.tooltip { 
+    font-size: 20px;
+}

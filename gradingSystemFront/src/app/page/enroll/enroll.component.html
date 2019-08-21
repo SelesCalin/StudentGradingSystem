@@ -1,0 +1,38 @@
+
+<div class="courses-table">
+<table mat-table [dataSource]="courses">
+    <ng-container matColumnDef="id" class="course-column">
+        <th mat-header-cell *matHeaderCellDef>Id </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="name" class="course-column">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let element"> {{element.name}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="teacherUsername" class="course-column">
+        <th mat-header-cell *matHeaderCellDef>Teacher</th>
+        <td mat-cell *matCellDef="let element"> {{element.teacherUsername}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="description" class="course-column">
+        <th mat-header-cell *matHeaderCellDef>Description</th>
+        <td mat-cell *matCellDef="let element"> {{element.description}}</td>
+    </ng-container>
+
+  
+
+    <ng-container matColumnDef="enroll">
+        <th mat-header-cell *matHeaderCellDef>Enroll</th>
+        <td mat-cell *matCellDef="let element"><button mat-raised-button color='accent' 
+            (click)="enroll(element.enrollmentKey,element.id)">
+                <mat-icon svgIcon='add' aria-haidden="false"></mat-icon>
+            </button></td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+</div>

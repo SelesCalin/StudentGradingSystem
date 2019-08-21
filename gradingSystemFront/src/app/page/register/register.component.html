@@ -1,0 +1,58 @@
+<div class="registerComp" fxLayoutAlign="center center">
+    <mat-card >
+        <mat-card-header>
+            <mat-card-title class="title"> Registration</mat-card-title>
+        </mat-card-header>
+
+
+        <mat-card-content fxLayout="column">
+            <mat-form-field>
+                <input matInput placeholder="Username" [(ngModel)]="username" name="username">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input type="password" matInput placeholder="Password" [(ngModel)]="password" name="password">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input type="password" matInput placeholder="Confirm Password" [(ngModel)]="confirmPassword"
+                    name="confirmPassword">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="E-mail" [(ngModel)]="email" name="email">
+            </mat-form-field>
+
+
+            <mat-form-field>
+                <input matInput placeholder="Full name" [(ngModel)]="name" name="name">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Adress" [(ngModel)]="adress" name="adress">
+            </mat-form-field>
+
+            <mat-radio-group [(ngModel)]="role" name="role">
+                <mat-radio-button checked=true value=2>Student</mat-radio-button>
+                <mat-radio-button value=1>Teacher</mat-radio-button>
+            </mat-radio-group>
+            <br>
+            <mat-form-field *ngIf="role==='2'">
+                <mat-label>Grupa:</mat-label>
+                <mat-select [(ngModel)]="grupa" name="grupa">
+                    <mat-option *ngFor="let group of groupList" value='{{group}}'>
+                        {{group}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </mat-card-content>
+
+        <mat-card-actions align="end">
+
+            <button mat-raised-button color="accent" (click)="onSubmit()">Update</button>
+
+        </mat-card-actions>
+
+    </mat-card>
+
+</div>

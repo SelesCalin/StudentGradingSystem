@@ -7,29 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42a67e1-7461-4a51-a05d-7ef124536010" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/ex/entity/.idea/entity.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/dto/LoginDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/chat/Chat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/assignment/Assignment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/assignment/AssignmentGrade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/assignment/AssignmentGradeID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/material/Material.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/quiz/Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/quiz/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/quiz/Quiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/quiz/QuizGrade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/course/quiz/QuizGradeID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/enumeration/Difficulty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/enumeration/MessageStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/enumeration/ResponseType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/enumeration/RoleType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/dto/RegisterDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/dto/TokenDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/entity/session/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/service/SessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/util/JwtTokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/util/SessionUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradingSystem/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gradingSystem/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/controller/RegisterController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gradingSystem/src/main/java/com/student/gradingSystem/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradingSystem/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gradingSystem/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +169,7 @@
       <workItem from="1564404362329" duration="5423000" />
       <workItem from="1564467037289" duration="10764000" />
       <workItem from="1564483371637" duration="2953000" />
-      <workItem from="1564554015324" duration="2237000" />
+      <workItem from="1564554015324" duration="2921000" />
     </task>
     <servers />
   </component>

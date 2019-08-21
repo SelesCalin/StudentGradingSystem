@@ -1,0 +1,11 @@
+.user-update{ 
+    margin-top: 0;
+    height: 100%;
+    width:50%;
+    background-color: azure;
+    align-content: center;
+  
+}
+mat-card{ 
+    width:100%;
+}

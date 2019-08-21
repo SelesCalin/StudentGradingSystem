@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>E-mail update</h1>
+<div mat-dialog-content>
+    <p>Current email: {{data.email}}</p>
+  <p>What's your new e-mail?</p>
+  <mat-form-field>
+    <input matInput type="email"  [(ngModel)]="updatedEmail" placeholder="E-mail">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button  [mat-dialog-close]="false" cdkFocusInitial>No Thanks</button>
+  <button mat-button (click)="updateEmail(updatedEmail)" [disabled]="!updatedEmail || updatedEmail.length<4" [mat-dialog-close]="true" >Ok</button>
+</div>

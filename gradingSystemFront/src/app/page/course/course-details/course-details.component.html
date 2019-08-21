@@ -1,0 +1,51 @@
+<div class="flex-container">
+
+    <mat-card class="assignments" >
+
+        <mat-card-header>
+            <mat-card-title>
+                Assignments
+            </mat-card-title>
+        </mat-card-header>
+    <mat-card-content style="height: 50vh; overflow: auto">
+            <mat-card class="assignment-list" style="background-color:rgb(17, 145, 0);margin-bottom:30px;width:50%;"
+                *ngFor="let assignment of courseDetails.assignments">
+                <mat-card-header>
+                    <mat-card-title>{{assignment.name}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <mat-chip selected>Deadline: {{getDateDate(assignment.deadline)| date:'short'}}
+                    </mat-chip>
+                </mat-card-content>
+            </mat-card>
+            
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="quizuri">
+
+        <mat-card-header>
+            <mat-card-title>
+                Quizzes
+            </mat-card-title>
+        </mat-card-header>
+
+
+        <mat-card-content style="height: 50vh; overflow: auto">
+            <mat-card class="quiz-list" style="background-color:rgb(17, 145, 0);margin-bottom:30px;width:50%;" 
+                *ngFor="let quiz of courseDetails.quizzes">
+                <mat-card-header>
+                    <mat-card-title>{{quiz.name}}</mat-card-title>
+                    <mat-card-subtitle *ngIf="quiz.taken">{{quiz.grade}}</mat-card-subtitle>
+                    <mat-card-subtitle *ngIf="!quiz.taken">Take Quiz</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content style="padding: 5x !important;">
+                    <mat-chip selected> {{quiz.difficulty}}</mat-chip>>
+                </mat-card-content>
+            </mat-card>
+        </mat-card-content>
+    </mat-card>
+
+
+
+</div>
