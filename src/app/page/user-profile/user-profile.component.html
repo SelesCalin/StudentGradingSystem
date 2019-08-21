@@ -1,0 +1,18 @@
+<mat-card class="profile-card">
+    <mat-card-header>
+
+        <mat-card-title>
+            <mat-icon svgIcon='user' aria-hidden="false"></mat-icon> {{username}}
+        </mat-card-title>
+        <mat-card-subtitle>{{roleString}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-chip-list aria-orientation='vertical' class="profile-chips" aria-label="User Details">
+                <h3>Full name:</h3>
+                <mat-chip color="accent" selected>{{fullName}}</mat-chip>
+                <br>
+                <h3>E-mail:</h3>
+                <mat-chip color="accent" selected>{{email}}</mat-chip>
+        </mat-chip-list>
+    </mat-card-content>
+</mat-card>
